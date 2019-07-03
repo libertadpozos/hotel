@@ -1,10 +1,4 @@
-'use strict';
-
-console.log("tab 1 :) ");
-
-'use strict'
-
-/***** TAB 1 ********/
+const tab1 = document.querySelector('#tab1');
 const listEl1 = document.querySelector('.opt1');
 const listEl2 = document.querySelector('.opt2');
 const listEl3 = document.querySelector('.opt3');
@@ -34,11 +28,14 @@ function ischecked(){
   listEl5.classList.remove('selected');
 }
 
-inputEl1.addEventListener('click', ischecked);
-inputEl2.addEventListener('click', ischecked);
-inputEl3.addEventListener('click', ischecked);
-inputEl4.addEventListener('click', ischecked);
-inputEl5.addEventListener('click', ischecked);
+if (tab1) {
+    inputEl1.addEventListener('click', ischecked);
+    inputEl2.addEventListener('click', ischecked);
+    inputEl3.addEventListener('click', ischecked);
+    inputEl4.addEventListener('click', ischecked);
+    inputEl5.addEventListener('click', ischecked);
+  }
+
 
 
 

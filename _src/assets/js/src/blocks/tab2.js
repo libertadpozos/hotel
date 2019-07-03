@@ -1,7 +1,4 @@
-'use strict';
-
-console.log("tab 2 :) ");
-
+const tab2 = document.querySelector('#tab2');
 const optional = document.querySelector('.optional-title__container');
 const arrowOneEl = document.querySelector('.arrow');
 const arrowTwoEl = document.querySelector('.arrow2');
@@ -19,9 +16,11 @@ function openTab(event){
   event.currentTarget.nextElementSibling.classList.add('hide');
   changeArrow();
 }
-moreInfoCont1.addEventListener('click', openTab);
-moreInfoCont2.addEventListener('click', openTab);
-optional.addEventListener('click', openTab);
+if (tab2) {
+    moreInfoCont1.addEventListener('click', openTab);
+    moreInfoCont2.addEventListener('click', openTab);
+    optional.addEventListener('click', openTab);
+  }
 
 function changeArrow(){
   //mejora tu estancia
@@ -29,7 +28,6 @@ function changeArrow(){
     arrowOneEl.classList.add('fa-chevron-up');
     arrowOneEl.classList.remove('fa-chevron-down');
   } else {
-  
     arrowOneEl.classList.add('fa-chevron-down');
     arrowOneEl.classList.remove('fa-chevron-up');
   }
@@ -38,7 +36,6 @@ function changeArrow(){
     arrowTwoEl.classList.add('fa-chevron-up');
     arrowTwoEl.classList.remove('fa-chevron-down');
   } else {
-    
     arrowTwoEl.classList.add('fa-chevron-down');
     arrowTwoEl.classList.remove('fa-chevron-up');
   }
@@ -47,7 +44,6 @@ function changeArrow(){
     arrowThreeEl.classList.add('fa-chevron-up');
     arrowThreeEl.classList.remove('fa-chevron-down');
   } else {
-   
     arrowThreeEl.classList.add('fa-chevron-down');
     arrowThreeEl.classList.remove('fa-chevron-up');
   }
