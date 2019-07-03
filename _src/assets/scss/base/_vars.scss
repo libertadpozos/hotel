@@ -1,0 +1,22 @@
+// Colors
+
+$color-blue700: #06016d;
+$color-blue400: #00A4DE;
+$color-blue100: #8ed7f8;
+$color-grey700: grey;
+$color-grey400: lightgrey;
+$color-grey200: rgb(230, 230, 230);
+$color-grey100: rgb(249, 245, 245);
+$color-white: white;
+
+// Typography
+
+$typography: 'Roboto Slab';
+$typography2: 'Arial';
+
+// MediaQueries Breakpoints
+// See https://github.com/carloscabo/mqbe and ./utils for both js and sass media queries helpers
+$mobile: 767px;
+$tablet: 1023px;
+$small-desktop:  1024px;
+$medium-desktop: 1264px;

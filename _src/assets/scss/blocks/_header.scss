@@ -1,0 +1,20 @@
+.list__tabs {
+    display: flex;
+    list-style: none;
+    border-bottom: $color-grey400 2px solid;
+    justify-content: flex-end;
+    background-color: $color-white;
+    padding: 10px;
+    margin:0px;
+
+}
+
+.link__tab{
+    text-decoration: none;
+    color: $color-blue400;
+    padding: 10px;
+    &:hover {
+        color: $color-blue700;;
+        text-decoration: underline;
+      }
+}

@@ -1,0 +1,13 @@
+@import '../application';
+
+//*** BASE ***
+@import './base/vars';
+@import './base/layout';
+@import './base/utils';
+
+//**** BLOCKS ****
+
+@import './blocks/header';
+@import './blocks/tab1';
+@import './blocks/tab2';
+

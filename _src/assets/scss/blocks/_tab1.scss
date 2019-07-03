@@ -1,0 +1,89 @@
+.hotel-title__container{
+    margin: 10px 15px 10px 15px;
+}
+.hotel__title{
+    @include roboto-slab-hotel-24-regular();
+}
+.star{
+    margin:2px;
+}
+.options-list__container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin:15px;
+    padding: 0;
+}
+.option{
+    border: 1px solid $color-blue100;
+    background-color: $color-white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option-title__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.option__list{
+    margin-top:15px;
+}
+.option__title{
+    @include roboto-slab-tab-16(); 
+}
+.option__line{
+    height:2px;
+    width:50px;
+    background-color: $color-blue100;
+}
+.option__item-list{
+    @include roboto-ventaja-15();
+    margin-bottom: 8px;
+}
+.choose{
+    margin:10px;
+    padding: 10px;
+    width:150px;
+    background-color:$color-grey100;
+    @include roboto-ventaja-15();
+}
+.label-choose{
+    margin-left: 10px;
+}
+.selected{
+    border: 1px solid $color-grey700;
+    & .choose{
+        border: 1px solid $color-grey700;
+    }
+}
+@media all and (min-width:$tablet){
+    .hotel-title__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 45px 20px 45px; 
+    }
+    .hotel__title{
+        margin-right: 20px;
+    }
+    .options-list__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin-left:25px;
+        margin-right:25px;
+    }
+  }
+@media all and (min-width:$small-desktop){
+    .star{
+        margin:5px;
+    }
+    .hotel__title{
+        margin-right: 30px;
+    }
+  }
+  
+  
+

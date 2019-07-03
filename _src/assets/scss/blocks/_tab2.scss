@@ -1,0 +1,119 @@
+.optional__container{
+    margin: 20px 15px 15px 15px;
+    background-color: $color-white;
+    border: 1px solid $color-grey200;
+    position:relative;
+}
+.optional-title__container{
+    display:flex;
+    align-items: flex-end;
+    margin: 40px 0 15px 20px; 
+}
+.optional__title{
+    @include roboto-slab-mejora-24();
+    margin:0;
+    margin-right: 15px;
+}
+.arrow{
+    color: $color-blue400;
+    margin-right: 15px;
+}
+.hide{
+    display:none;
+}
+.exclusively{
+@include roboto-exclusivo-14();
+margin:0;
+padding: 5px;
+font-size:10px;
+background-color: red;
+position: absolute;
+text-transform: uppercase;
+}
+.opt{
+    margin:0;
+    @include roboto-slab-tab-14 ();
+}
+.art__container{
+    border: 1px solid $color-grey200;
+    margin: 15px;
+}
+.art__img{
+    width: 200px;
+}
+.art-description__container{
+    margin:15px;
+}
+.art__title{
+    @include roboto-slab-rutina-18();
+}
+.art__prg{
+    @include roboto-cras-14();
+}
+.more-information__container{
+    display: flex;
+    align-items: flex-end; 
+    margin-left:15px; 
+    margin-bottom: 10px; 
+}
+.more-information__title{
+    @include roboto-slab-mejora-14();
+    margin:0;
+    margin-right:15px;
+}
+.arrow2{
+    color: $color-blue400;
+    margin-left:10px;
+}
+.more-includes__title{
+    @include roboto-cras-16();
+    margin-left: 15px;
+}
+.more-includes__list{
+    @include roboto-cras-14(); 
+}
+.more-includes__prg{
+    @include roboto-slab-tab-14();
+    margin-left: 15px;
+}
+
+@media all and (min-width:$tablet){
+    .optional__container{
+        margin: 25px; 
+    }
+    .exclusively{
+        right:0;
+    }
+    .art-img-description__container{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .more-includes__list{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         
+         grid-gap: 25px; 
+    }
+    .art__container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .art__img{
+        width: 300px;
+    }
+    .more-information__container{
+        margin-left:315px;  
+    }
+}
+    
+
+@media all and (min-width:$small-desktop){
+    .art-description__container{
+        margin-right: 10%;
+    }
+    .more-information__collapsible{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+  }
+  
